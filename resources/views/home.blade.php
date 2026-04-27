@@ -89,8 +89,6 @@
             <h2>Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <!-- Replace div with: <img src="scholartech-preview.png" alt="Scholartech" class="project-image" /> -->
-                    <div class="project-image-placeholder">Project preview</div>
                     <div class="project-card-body">
                         <h3>Scholartech</h3>
                         <p>Developed an all-in-one digitalized payment ecosystem to streamline transactions in educational institutions. Features include QR code payments, administrative dashboards, and inventory management tools.</p>
@@ -98,8 +96,6 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <!-- Replace div with: <img src="calendar-preview.png" alt="Calendar App" class="project-image" /> -->
-                    <div class="project-image-placeholder">Project preview</div>
                     <div class="project-card-body">
                         <h3>Calendar APP</h3>
                         <p>Built a coaching management platform supporting administrators, mentors, and students. Enabled mentors to schedule sessions and track progress through interactive dashboards.</p>
