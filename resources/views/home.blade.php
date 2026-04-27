@@ -53,7 +53,7 @@
                     <h3>Fullstack Software Developer · Assuresoft</h3>
                     <p>Engineered responsive web pages and modernized legacy components on a Drupal-based corporate website. Optimized site performance and SEO, and created custom Drupal hooks to automate image optimization and enhance scalability.</p>
                     <div class="tags">
-                        <span>Drupal</span><span>Twig</span><span>SCSS</span><span>JavaScript</span><span>GTM</span>
+                        <span>Drupal</span><span>Twig</span><span>SCSS</span><span>JavaScript</span><span>GTM</span><span>PHP</span>
                     </div>
                 </div>
                 <div class="job">
@@ -61,7 +61,7 @@
                     <h3>Fullstack Software Developer · Fastxo</h3>
                     <p>Developed a tailored HIPAA-compliant app managing 3000+ active clients. Built applications leveraging AI technologies to enhance operational efficiency and automated multiple business workflows using n8n.</p>
                     <div class="tags">
-                        <span>n8n</span><span>AI APIs</span><span>App Development</span>
+                        <span>n8n</span><span>AI APIs</span><span>App Development</span><span>React</span><span>Laravel</span><span>PHP</span>
                     </div>
                 </div>
                 <div class="job">
@@ -117,6 +117,7 @@
                 <span class="icon">Python</span>
                 <span class="icon">SQL</span>
                 <span class="icon">JavaScript</span>
+                <span class="icon">React</span>
                 <span class="icon">.NET 8</span>
                 <span class="icon">Laravel</span>
                 <span class="icon">Angular</span>
@@ -143,7 +144,7 @@
 
     <footer id="contact">
         <h2>Let's Connect!</h2>
-        <p class="tagline">Open to new opportunities — let's build something great together.</p>
+        <p class="tagline">Open to new opportunities. Let's build something great together.</p>
         <div class="social-links">
             <a href="mailto:hectorichasobarrientos@gmail.com" class="btn">Email</a>
             <a href="https://www.linkedin.com/in/hector-ichaso-barrientos-48158a238/" target="_blank" class="btn">LinkedIn</a>

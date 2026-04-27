@@ -763,5 +763,9 @@ footer p {
 }
 
 @media (max-width: 480px) {
+    .nav-links li:not(:last-child) { display: none; }
+}
+
+@media (max-width: 380px) {
     .nav-links { display: none; }
 }
