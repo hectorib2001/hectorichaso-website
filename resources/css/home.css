@@ -753,8 +753,15 @@ footer p {
     .nav-links { gap: 1.2rem; }
 }
 
+@media (max-width: 800px) {
+    .nav-links li:not(:last-child):not(:nth-last-child(2)) { display: none; }
+}
+
 @media (max-width: 640px) {
     .hero h1 { font-size: 2.4rem; }
-    .nav-links li:not(:last-child):not(:nth-last-child(2)) { display: none; }
     section:not(#home) { padding: 4rem 1.25rem; }
+}
+
+@media (max-width: 480px) {
+    .nav-links { display: none; }
 }
