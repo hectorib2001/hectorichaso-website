@@ -12,6 +12,8 @@ export default defineConfig({
                 'resources/js/home.js',
                 'resources/css/Biocor/biocor.css',
                 'resources/js/Biocor/biocor.js',
+                'resources/css/Laura/laura.css',
+                'resources/js/Laura/laura.js',
             ],
             refresh: true,
         }),

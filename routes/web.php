@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/biocor', function () {
     return view('Biocor.home');
 });
+
+Route::get('/laura', function () {
+    return view('Laura.home');
+});

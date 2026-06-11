@@ -1,0 +1,942 @@
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+    --taupe:       #BA9D8A;
+    --taupe-deep:  #9C7E6B;
+    --taupe-tint:  #E8DDD3;
+    --taupe-wash:  #F3ECE4;
+    --ivory:       #FAF6F1;
+    --white:       #FFFFFF;
+    --ink:         #3A302A;
+    --ink-soft:    #6B5E54;
+    --line:        #E6DBD0;
+
+    --shadow:      0 24px 60px -30px rgba(58, 48, 42, .45);
+    --shadow-soft: 0 16px 40px -28px rgba(58, 48, 42, .40);
+
+    --maxw: 1180px;
+}
+
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--ink);
+    background: var(--ivory);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant', serif;
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: .005em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ============================================================
+   LAYOUT UTILITIES
+   ============================================================ */
+.wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 28px;
+}
+
+.eyebrow {
+    font-size: .72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .32em;
+    color: var(--taupe-deep);
+}
+
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Jost';
+    font-size: .84rem;
+    font-weight: 500;
+    letter-spacing: .03em;
+    cursor: pointer;
+    transition: background .3s ease, color .3s ease, transform .3s ease, box-shadow .3s ease;
+}
+
+.btn-primary {
+    background: var(--ink);
+    color: var(--ivory);
+}
+
+.btn-primary:hover {
+    background: var(--taupe-deep);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--taupe);
+}
+
+.btn-ghost:hover {
+    background: var(--taupe);
+    color: var(--white);
+}
+
+
+/* ============================================================
+   NAV
+   ============================================================ */
+header.nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(250, 246, 241, .82);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 74px;
+}
+
+.brand {
+    display: flex;
+    align-items: baseline;
+    gap: .5ch;
+    font-family: 'Cormorant', serif;
+    font-size: 1.7rem;
+    letter-spacing: .02em;
+}
+
+.brand b {
+    font-weight: 600;
+}
+
+.brand span {
+    font-family: 'Jost';
+    font-size: .62rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .34em;
+    color: var(--taupe-deep);
+}
+
+.nav-links {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: .84rem;
+    letter-spacing: .04em;
+    color: var(--ink-soft);
+    transition: color .25s;
+}
+
+.nav-links a:hover {
+    color: var(--ink);
+}
+
+.nav-cta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 24px;
+    height: 1.6px;
+    background: var(--ink);
+    transition: .3s;
+}
+
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+    position: relative;
+    padding: 72px 0 96px;
+    overflow: hidden;
+}
+
+.hero-glow {
+    position: absolute;
+    top: -180px;
+    right: -120px;
+    z-index: 0;
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(186, 157, 138, .34), rgba(186, 157, 138, 0) 68%);
+    pointer-events: none;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.hero-copy .eyebrow {
+    margin-bottom: 22px;
+}
+
+.hero-copy h1 {
+    font-size: clamp(3rem, 6.5vw, 5.4rem);
+    margin-bottom: 8px;
+}
+
+.hero-copy h1 em {
+    font-style: italic;
+    color: var(--taupe-deep);
+}
+
+.hero-role {
+    margin: 18px 0 26px;
+    font-size: .86rem;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    color: var(--ink-soft);
+}
+
+.hero-role i {
+    margin: 0 10px;
+    font-style: normal;
+    color: var(--line);
+}
+
+.hero-copy p.lead {
+    max-width: 46ch;
+    margin-bottom: 34px;
+    font-size: 1.12rem;
+    font-weight: 300;
+    color: var(--ink-soft);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Portrait */
+.portrait {
+    position: relative;
+    justify-self: center;
+}
+
+.portrait-frame {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: min(420px, 80vw);
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--line);
+    border-radius: 230px 230px 30px 30px;
+    background: linear-gradient(165deg, var(--taupe-wash), var(--taupe-tint));
+    box-shadow: var(--shadow);
+}
+
+/* Replace .portrait-ph contents with <img src="foto-dra.jpg" alt="Dra. Laura Bazán"> when photo is available */
+.portrait-ph {
+    padding-bottom: 40px;
+    text-align: center;
+    color: var(--taupe-deep);
+}
+
+.portrait-ph .mono {
+    font-family: 'Cormorant';
+    font-size: 5.6rem;
+    line-height: 1;
+    color: var(--taupe);
+    opacity: .55;
+}
+
+.portrait-ph small {
+    display: block;
+    margin-top: 10px;
+    font-size: .66rem;
+    text-transform: uppercase;
+    letter-spacing: .28em;
+    opacity: .7;
+}
+
+.portrait-badge {
+    position: absolute;
+    left: -26px;
+    bottom: 54px;
+    z-index: 2;
+    padding: 16px 20px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: var(--shadow-soft);
+}
+
+.portrait-badge .num {
+    font-family: 'Cormorant';
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--ink);
+}
+
+.portrait-badge .lab {
+    margin-top: 2px;
+    font-size: .66rem;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    color: var(--ink-soft);
+}
+
+.portrait-arc {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    z-index: 0;
+    width: 130px;
+    height: 130px;
+    border: 1.4px solid var(--taupe);
+    border-radius: 50%;
+    opacity: .4;
+}
+
+
+/* ============================================================
+   SECTION SCAFFOLDING
+   ============================================================ */
+section {
+    padding: 104px 0;
+}
+
+.sec-head {
+    max-width: 680px;
+    margin-bottom: 56px;
+}
+
+.sec-head h2 {
+    font-size: clamp(2.3rem, 4.4vw, 3.4rem);
+    margin: 14px 0 0;
+}
+
+.sec-head p {
+    margin-top: 18px;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+}
+
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about {
+    background: var(--white);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-card {
+    padding: 40px;
+    background: var(--taupe-wash);
+    border: 1px solid var(--line);
+    border-radius: 26px;
+}
+
+.about-card .quote {
+    font-family: 'Cormorant';
+    font-style: italic;
+    font-size: 1.9rem;
+    line-height: 1.3;
+    color: var(--ink);
+}
+
+.about-card .quote::before {
+    content: "\201C";
+    margin-right: .1ch;
+    font-size: 2.6rem;
+    line-height: 0;
+    vertical-align: -.35em;
+    color: var(--taupe);
+}
+
+.creds {
+    display: grid;
+    gap: 18px;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.creds li {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    font-size: 1rem;
+    color: var(--ink-soft);
+}
+
+.creds li .dot {
+    flex: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--taupe-tint);
+    display: grid;
+    place-items: center;
+    color: var(--taupe-deep);
+}
+
+.creds li b {
+    display: block;
+    font-family: 'Jost';
+    font-weight: 500;
+    color: var(--ink);
+}
+
+.about-copy h2 {
+    font-size: clamp(2rem, 3.6vw, 2.9rem);
+    margin-bottom: 20px;
+}
+
+.about-copy p {
+    margin-bottom: 18px;
+    color: var(--ink-soft);
+}
+
+.about-copy .btn {
+    margin-top: 14px;
+}
+
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.svc {
+    position: relative;
+    overflow: hidden;
+    padding: 34px 30px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.svc::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 22px;
+    background: linear-gradient(160deg, rgba(186, 157, 138, .08), transparent 60%);
+    opacity: 0;
+    transition: opacity .35s;
+}
+
+.svc:hover {
+    transform: translateY(-6px);
+    border-color: var(--taupe);
+    box-shadow: var(--shadow);
+}
+
+.svc:hover::after {
+    opacity: 1;
+}
+
+.svc .ic {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 22px;
+    border-radius: 14px;
+    background: var(--taupe-wash);
+    display: grid;
+    place-items: center;
+    color: var(--taupe-deep);
+}
+
+.svc h3 {
+    font-size: 1.55rem;
+    margin-bottom: 10px;
+}
+
+.svc p {
+    font-size: .95rem;
+    font-weight: 300;
+    color: var(--ink-soft);
+}
+
+.svc .idx {
+    position: absolute;
+    top: 26px;
+    right: 30px;
+    font-family: 'Cormorant';
+    font-size: 1.1rem;
+    color: var(--taupe);
+    opacity: .5;
+}
+
+
+/* ============================================================
+   PREVENTION STRIP
+   ============================================================ */
+.strip {
+    background: var(--ink);
+    color: var(--ivory);
+    text-align: center;
+}
+
+.strip h2 {
+    max-width: 18ch;
+    margin: 0 auto;
+    font-size: clamp(2.1rem, 4vw, 3.2rem);
+    color: var(--ivory);
+}
+
+.strip h2 em {
+    font-style: italic;
+    color: var(--taupe);
+}
+
+.strip p {
+    max-width: 54ch;
+    margin: 24px auto 34px;
+    font-weight: 300;
+    color: rgba(250, 246, 241, .72);
+}
+
+.strip .btn-primary {
+    background: var(--taupe);
+    color: var(--ink);
+}
+
+.strip .btn-primary:hover {
+    background: var(--white);
+}
+
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonials {
+    background: var(--white);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.test-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 30px;
+    background: var(--ivory);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+}
+
+.stars {
+    margin-bottom: 16px;
+    font-size: .9rem;
+    letter-spacing: 3px;
+    color: var(--taupe);
+}
+
+.test p {
+    flex: 1;
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.55;
+    color: var(--ink);
+}
+
+.test .who {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.test .av {
+    flex: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--taupe-tint);
+    display: grid;
+    place-items: center;
+    font-family: 'Cormorant';
+    font-size: 1.2rem;
+    color: var(--taupe-deep);
+}
+
+.test .who b {
+    font-size: .95rem;
+    font-weight: 500;
+}
+
+.test .who small {
+    display: block;
+    font-size: .78rem;
+    color: var(--ink-soft);
+}
+
+
+/* ============================================================
+   LOCATION
+   ============================================================ */
+.loc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 54px;
+    align-items: stretch;
+}
+
+.loc-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loc-info h2 {
+    margin-bottom: 22px;
+    font-size: clamp(2rem, 3.6vw, 2.9rem);
+}
+
+.loc-list {
+    display: grid;
+    gap: 24px;
+    margin: 10px 0 34px;
+    list-style: none;
+}
+
+.loc-list li {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.loc-list .dot {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--taupe-wash);
+    display: grid;
+    place-items: center;
+    color: var(--taupe-deep);
+}
+
+.loc-list b {
+    display: block;
+    font-family: 'Jost';
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.loc-list span {
+    font-size: .95rem;
+    color: var(--ink-soft);
+}
+
+.map {
+    overflow: hidden;
+    min-height: 380px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    box-shadow: var(--shadow-soft);
+}
+
+.map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: 0;
+    filter: grayscale(.2) sepia(.12);
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+    padding: 72px 0 36px;
+    background: var(--taupe-wash);
+    border-top: 1px solid var(--line);
+}
+
+.foot-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 48px;
+}
+
+.foot-brand .brand {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.foot-brand p {
+    max-width: 34ch;
+    font-size: .95rem;
+    color: var(--ink-soft);
+}
+
+.foot-col h4 {
+    margin-bottom: 18px;
+    font-family: 'Jost';
+    font-size: .74rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: var(--taupe-deep);
+}
+
+.foot-col a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 13px;
+    font-size: .95rem;
+    color: var(--ink-soft);
+    transition: color .25s;
+}
+
+.foot-col a:hover {
+    color: var(--ink);
+}
+
+.foot-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 26px;
+    border-top: 1px solid var(--line);
+    font-size: .82rem;
+    color: var(--ink-soft);
+}
+
+
+/* ============================================================
+   FLOATING WHATSAPP
+   ============================================================ */
+.wa-float {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 80;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #25D366;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 14px 30px -8px rgba(37, 211, 102, .6);
+    transition: transform .3s;
+}
+
+.wa-float:hover {
+    transform: scale(1.08);
+}
+
+.wa-float svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+
+
+/* ============================================================
+   REVEAL ANIMATION
+   ============================================================ */
+.reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.in {
+    opacity: 1;
+    transform: none;
+}
+
+
+/* ============================================================
+   RESPONSIVE — TABLET  (≤ 900px)
+   ============================================================ */
+@media (max-width: 900px) {
+    .nav-links {
+        position: fixed;
+        inset: 74px 0 auto 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 8px 0;
+        background: var(--ivory);
+        border-bottom: 1px solid var(--line);
+        transform: translateY(-130%);
+        transition: transform .4s ease;
+    }
+
+    .nav-links.open {
+        transform: none;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 15px 28px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-cta .btn-ghost {
+        display: none;
+    }
+
+    .hero-inner,
+    .about-grid,
+    .loc-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .about-grid {
+        gap: 40px;
+    }
+
+    .services-grid,
+    .test-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .foot-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portrait-badge {
+        left: 8px;
+    }
+}
+
+
+/* ============================================================
+   RESPONSIVE — MOBILE  (≤ 600px)
+   ============================================================ */
+@media (max-width: 600px) {
+    .wrap {
+        padding: 0 20px;
+    }
+
+    section {
+        padding: 74px 0;
+    }
+
+    .hero {
+        padding: 48px 0 64px;
+    }
+
+    .services-grid,
+    .test-grid,
+    .foot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        flex: 1;
+        justify-content: center;
+    }
+}
+
+
+/* ============================================================
+   ACCESSIBILITY — REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        scroll-behavior: auto !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
