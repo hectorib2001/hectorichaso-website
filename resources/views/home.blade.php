@@ -14,6 +14,7 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certs</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#contact" class="btn-connect">Let's Connect!</a></li>
         </ul>
@@ -126,6 +127,58 @@
                 <span class="icon">AWS</span>
                 <span class="icon">n8n</span>
                 <span class="icon">Git</span>
+            </div>
+        </section>
+
+        <!-- ── Certifications ── -->
+        <section id="certifications">
+            <span class="section-label">Credentials</span>
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-issuer">Anthropic</div>
+                    <h3>Introduction to Subagents</h3>
+                    <p class="date">Jun 2026</p>
+                    <p>Fundamentals of designing and orchestrating AI subagent systems within the Claude ecosystem.</p>
+                    <div class="cert-id">ID · rznp548etfi5</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">Anthropic</div>
+                    <h3>Model Context Protocol: Advanced Topics</h3>
+                    <p class="date">Jun 2026</p>
+                    <p>Deep dive into advanced MCP patterns, server architecture, and production integration strategies.</p>
+                    <div class="cert-id">ID · uwe8zojezduj</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">Anthropic</div>
+                    <h3>Introduction to Model Context Protocol</h3>
+                    <p class="date">Jun 2026</p>
+                    <p>Core concepts and implementation of MCP for connecting AI models to external tools and data sources.</p>
+                    <div class="tags"><span>Model Context Protocol</span></div>
+                    <div class="cert-id">ID · mh7ai4wqi7zv</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">Anthropic</div>
+                    <h3>Claude Code 101</h3>
+                    <p class="date">Jun 2026</p>
+                    <p>Foundations of using Claude Code as an AI-powered development assistant for real-world engineering tasks.</p>
+                    <div class="tags"><span>Anthropic Claude</span></div>
+                    <div class="cert-id">ID · ffjesd5rwhdk</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">Anthropic</div>
+                    <h3>Claude Code in Action</h3>
+                    <p class="date">Jun 2026</p>
+                    <p>Practical application of Claude Code in production workflows, refactoring, and agentic task automation.</p>
+                    <div class="cert-id">ID · kk4d5tzc2nxa</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">Vabro.ai &amp; VMEdu.com</div>
+                    <h3>Scrum Fundamental Certified</h3>
+                    <p class="date">Oct 2022</p>
+                    <p>Scrum/Kanban, AI, Business Analysis, OKRs, Six Sigma, and Sales &amp; Marketing methodologies.</p>
+                    <div class="tags"><span>Scrum</span><span>Metodologías ágiles</span></div>
+                </div>
             </div>
         </section>
 

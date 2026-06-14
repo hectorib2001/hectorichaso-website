@@ -20,17 +20,33 @@ document.getElementById('servGrid').innerHTML=services.map(s=>`
   </article>`).join('');
 
 // ---- Equipo médico ----
-const team=[
-  ["Dr. [Nombre]","Cirujano cardiovascular","Especialista en cirugía del corazón con amplia trayectoria."],
-  ["Dr. [Nombre]","Cardiólogo · Arritmias","Experto en arritmias y seguimiento postoperatorio."],
-  ["Dra. [Nombre]","Endocrinología","Atención integral del sistema endocrino y metabólico."],
-  ["Lic. [Nombre]","Nutrición","Acompañamiento nutricional para la salud del corazón."],
+const doctorImages = [
+  'ArturoBarrientos.jpg',
+  'LuisRenjel.jpg',
+  'JulioZamora.jpg',
+  'MarielaSanchez.jpg',
+  'XimenaSonco.jpg',
 ];
-document.getElementById('teamGrid').innerHTML=team.map(d=>`
+
+const team = [
+  ["Dr. Arturo Barrientos", "Cirujano cardiovascular",  "Especialista en cirugía del corazón con amplia trayectoria."],
+  ["Dr. Luis Renjel", "Cardiólogo · Arritmias",   "Experto en arritmias y seguimiento postoperatorio."],
+  ["Dr. Julio Zamora", "Cardiólogo",   "Cardiología general con enfoque en prevención y diagnóstico."],
+  ["Dra. Mariela Sánchez","Endocrinología",            "Atención integral del sistema endocrino y metabólico."],
+  ["Lic. Ximena Sonco","Nutrición",                 "Acompañamiento nutricional para la salud del corazón."],
+];
+
+function doctorPhoto(filename, name) { 
+  const bust = '<svg viewBox="0 0 24 24" fill="none" stroke="#33523a" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>';
+  if (!filename) return bust;
+  const bustHidden = '<svg style="display:none" viewBox="0 0 24 24" fill="none" stroke="#33523a" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>';
+  return `<img src="/images/Biocor/${filename}" alt="${name}" onerror="this.style.display='none';this.nextElementSibling.style.display=''">${bustHidden}`;
+}
+
+document.getElementById('teamGrid').innerHTML = team.map((d, i) => `
   <article class="doc reveal">
     <div class="ph">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#33523a" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>
-      <span class="ph-note">Foto real del especialista</span>
+      ${doctorPhoto(doctorImages[i], d[0])}
     </div>
     <div class="body"><h3>${d[0]}</h3><div class="role">${d[1]}</div><div class="desc">${d[2]}</div></div>
   </article>`).join('');

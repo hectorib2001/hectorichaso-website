@@ -53,6 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
         revealObserver.observe(card);
     });
 
+    // Observe cert cards with stagger
+    document.querySelectorAll('.cert-card').forEach((card, i) => {
+        card.style.transitionDelay = `${i * 0.08}s`;
+        revealObserver.observe(card);
+    });
+
     // Observe about text and image
     const aboutText = document.querySelector('.about-text');
     const aboutImg  = document.querySelector('.about-image-placeholder');
