@@ -92,7 +92,7 @@
         </div>
         <div class="hero-media reveal">
           <div class="photo">
-            <img src="{{ asset('images/Biocor/ecocardiograma.jpg') }}" alt="Ecocardiograma realizado por el equipo médico de Biocor">
+            <img src="{{ asset('images/Biocor/Ecocardiograma.jpg') }}" alt="Ecocardiograma realizado por el equipo médico de Biocor">
           </div>
           <div class="badge">
             <div>
