@@ -51,34 +51,34 @@
             <div class="timeline">
                 <div class="job">
                     <p class="date">Sep 2025 – Present</p>
-                    <h3>Fullstack Software Developer · Assuresoft</h3>
-                    <p>Engineered responsive web pages and modernized legacy components on a Drupal-based corporate website. Optimized site performance and SEO, and created custom Drupal hooks to automate image optimization and enhance scalability.</p>
+                    <h3>Software Developer · AssureSoft</h3>
+                    <p>Modernized responsive pages and components on the company's Drupal site, resolving SEO and performance bottlenecks that cut page load time by 7 seconds. Implemented GA4/GTM tracking and built UTM-tracked landing pages with webforms. Architected an MCP integration connecting Claude Code to production database schemas for AI-assisted development, and championed Spec-Driven Development, lifting sprint story-point completion by 50% over three sprints.</p>
                     <div class="tags">
-                        <span>Drupal</span><span>Twig</span><span>SCSS</span><span>JavaScript</span><span>GTM</span><span>PHP</span>
+                        <span>Drupal</span><span>Twig</span><span>SCSS</span><span>GA4</span><span>GTM</span><span>MCP</span><span>PHP</span>
                     </div>
                 </div>
                 <div class="job">
                     <p class="date">Feb 2025 – Aug 2025</p>
-                    <h3>Fullstack Software Developer · Fastxo</h3>
-                    <p>Developed a tailored HIPAA-compliant app managing 3000+ active clients. Built applications leveraging AI technologies to enhance operational efficiency and automated multiple business workflows using n8n.</p>
+                    <h3>Automation & Integration Specialist · Fastxo</h3>
+                    <p>Engineered a HIPAA-compliant health-tech application managing data for 3,000+ active clients and 100+ internal users, with JWT/OAuth-secured data handling. Built a full-stack workflow-management app (React frontend, Laravel REST API backend) and designed an AI-agent-driven n8n system that classified ticket urgency and triggered automated routing, eliminating manual bottlenecks via external REST API integrations.</p>
                     <div class="tags">
-                        <span>n8n</span><span>AI APIs</span><span>App Development</span><span>React</span><span>Laravel</span><span>PHP</span>
+                        <span>React</span><span>Laravel</span><span>PHP</span><span>n8n</span><span>JWT/OAuth</span><span>REST APIs</span>
                     </div>
                 </div>
                 <div class="job">
                     <p class="date">Jan 2024 – Jan 2025</p>
-                    <h3>Product Manager & Software Developer · CiberIT</h3>
-                    <p>Implemented robust and scalable web applications using C# and the .NET 8 framework. Designed process automation solutions using Power Apps and Power Automate, and optimized SQL Server and MongoDB databases.</p>
+                    <h3>Backend Developer & Product Manager · CIBERIT</h3>
+                    <p>Built scalable backend web services and RESTful APIs in C#/.NET 8, writing and tuning SQL Server objects with execution plans and indexes. Managed relational (SQL Server) and non-relational (MongoDB) databases, designed automations in Power Apps/Power Automate, consulted on ODOO CRM implementations for third-party companies, and owned an Identity and Access Management project end-to-end.</p>
                     <div class="tags">
-                        <span>C#</span><span>.NET 8</span><span>Power Apps</span><span>SQL Server</span><span>MongoDB</span>
+                        <span>C#</span><span>.NET 8</span><span>SQL Server</span><span>MongoDB</span><span>Power Automate</span><span>ODOO</span>
                     </div>
                 </div>
                 <div class="job">
-                    <p class="date">Jan 2023 – Oct 2023</p>
-                    <h3>Software Developer · TESABIZ</h3>
-                    <p>Implemented automated software testing, reducing client-reported bug tickets by over 50%. Developed dynamic applications using Java within the Angular framework.</p>
+                    <p class="date">Feb 2023 – Nov 2023</p>
+                    <h3>Software Developer (Intern) · Tesabiz</h3>
+                    <p>Contributed to banking software applications across frontend and backend. Developed responsive user interfaces using Angular, TypeScript, HTML, and CSS, and designed automated unit and integration testing that reduced post-release bug tickets by over 50%.</p>
                     <div class="tags">
-                        <span>Java</span><span>Angular</span><span>TypeScript</span><span>HTML</span><span>CSS</span>
+                        <span>Angular</span><span>TypeScript</span><span>HTML</span><span>CSS</span><span>Testing</span>
                     </div>
                 </div>
             </div>
@@ -91,16 +91,30 @@
             <div class="project-grid">
                 <div class="project-card">
                     <div class="project-card-body">
+                        <h3>Biocor Business Website</h3>
+                        <p>Designed and built a responsive, custom-coded business website from concept to launch for a cardiovascular disease center — including domain, DNS, hosting, and SSL configuration.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-body">
+                        <h3>1:1 Meeting Intake & Follow-up Automation</h3>
+                        <p>Built a two-workflow automation (55 nodes) that uses an LLM to extract action items, goals, risks, and sentiment from meeting transcripts into a Google Sheet, then sends Slack reminders, escalates risks, and flags sentiment trends.</p>
+                        <div class="tags"><span>n8n</span><span>LLM API</span><span>Google Workspace</span><span>Slack</span></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-body">
                         <h3>Scholartech</h3>
-                        <p>Developed an all-in-one digitalized payment ecosystem to streamline transactions in educational institutions. Features include QR code payments, administrative dashboards, and inventory management tools.</p>
+                        <p>Engineered a Laravel platform that digitized campus payment ecosystems with QR-based cashless payments, admin dashboards for real-time sales/inventory tracking, and a secure parent portal.</p>
                         <div class="tags"><span>PHP</span><span>Laravel</span><span>JavaScript</span><span>MySQL</span></div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-card-body">
-                        <h3>Calendar APP</h3>
-                        <p>Built a coaching management platform supporting administrators, mentors, and students. Enabled mentors to schedule sessions and track progress through interactive dashboards.</p>
-                        <div class="tags"><span>PHP</span><span>Laravel</span><span>JavaScript</span><span>MySQL</span></div>
+                        <h3>Coaching Calendar App</h3>
+                        <p>Engineered a multi-tiered coaching platform with role-specific dashboards for admins, mentors, and students to streamline scheduling, goal tracking, and user management.</p>
+                        <div class="tags"><span>PHP</span><span>Laravel</span><span>MySQL</span><span>REST APIs</span></div>
                     </div>
                 </div>
             </div>
@@ -110,22 +124,28 @@
         <section id="skills">
             <span class="section-label">Toolbox</span>
             <h2>My Skills</h2>
-            <p>Strong foundation in full-stack development — PHP, C#, Java, Python, SQL, JavaScript, and HTML/CSS. Experienced with .NET 8, Laravel, Angular, and Drupal. Fluent in Spanish, English, and Portuguese, and a dedicated leverager of AI tooling to move faster and build better.</p>
+            <p>Fullstack developer with hands-on experience across PHP, JavaScript/TypeScript, C#/.NET, and SQL — building responsive web apps, automating business workflows with n8n and Power Automate, and integrating AI tooling (Claude Code, MCP) into production systems. Comfortable working across CMS platforms, analytics stacks, and international remote teams. Fluent in Spanish, English, and Portuguese.</p>
             <div class="skill-icons">
                 <span class="icon">PHP</span>
                 <span class="icon">C#</span>
+                <span class="icon">TypeScript</span>
+                <span class="icon">JavaScript</span>
                 <span class="icon">Java</span>
                 <span class="icon">Python</span>
                 <span class="icon">SQL</span>
-                <span class="icon">JavaScript</span>
                 <span class="icon">React</span>
+                <span class="icon">Angular</span>
                 <span class="icon">.NET 8</span>
                 <span class="icon">Laravel</span>
-                <span class="icon">Angular</span>
                 <span class="icon">Drupal</span>
+                <span class="icon">n8n</span>
+                <span class="icon">Claude Code</span>
+                <span class="icon">MCP</span>
+                <span class="icon">GA4 / GTM</span>
+                <span class="icon">SQL Server</span>
+                <span class="icon">MongoDB</span>
                 <span class="icon">Docker</span>
                 <span class="icon">AWS</span>
-                <span class="icon">n8n</span>
                 <span class="icon">Git</span>
             </div>
         </section>
@@ -179,6 +199,13 @@
                     <p>Scrum/Kanban, AI, Business Analysis, OKRs, Six Sigma, and Sales &amp; Marketing methodologies.</p>
                     <div class="tags"><span>Scrum</span><span>Metodologías ágiles</span></div>
                 </div>
+                <div class="cert-card">
+                    <div class="cert-issuer">Forescout</div>
+                    <h3>Sales Accreditation</h3>
+                    <p class="date">2024</p>
+                    <p>Accreditation covering network security solution positioning and technical fundamentals for enterprise sales conversations.</p>
+                    <div class="tags"><span>Cybersecurity</span></div>
+                </div>
             </div>
         </section>
 
@@ -188,8 +215,8 @@
                 <span class="section-label">Background</span>
                 <h2>About me</h2>
                 <p>I am a Fullstack Software Developer with a degree in Computational Systems Engineering from Universidad Privada Boliviana. I also hold a SCRUM Fundamental Certification, which reinforces my agile approach to building software.</p>
-                <p>I'm a quick learner who adapts easily to new challenges and thrives in collaborative team environments. I genuinely enjoy solving complex problems and extensively leverage AI technologies to boost operational efficiency and deliver high-quality, scalable solutions.</p>
-                <p>Whether modernizing legacy systems or automating business workflows, I am driven by a dedication to building software that makes a tangible impact.</p>
+                <p>Across roles at AssureSoft, Fastxo, CIBERIT, and Tesabiz, I've shipped everything from HIPAA-compliant health-tech platforms to banking UIs and CRM/ERP automations — often within international, fully remote teams. I ramp up quickly on unfamiliar tools and codebases, and lean on AI tooling like Claude Code, MCP, and n8n to move faster without cutting corners.</p>
+                <p>Whether modernizing legacy systems, wiring up analytics, or automating business workflows, I am driven by a dedication to building software that makes a tangible impact.</p>
             </div>
             <img src="{{ asset('images/about.jpg') }}" alt="Image of a developer" class="about-image-placeholder" />
         </section>

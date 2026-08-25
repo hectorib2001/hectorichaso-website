@@ -52,6 +52,4 @@ There is currently only one route and one view:
 
 Assets are bundled by Vite via `@vite()` directives in the Blade template. Per-page CSS/JS files (e.g. `home.css`, `home.js`) are the pattern — not a global `app.css`/`app.js` bundle.
 
-There is an empty stub at `resources/views/Biocor/home.blade.php` — it has no content and is not wired to any route yet.
-
 The test suite uses **Pest** (not PHPUnit directly). CI runs against PHP 8.2, 8.3, and 8.4.
